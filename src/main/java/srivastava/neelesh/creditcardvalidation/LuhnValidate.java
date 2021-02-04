@@ -15,11 +15,12 @@ import java.util.regex.Pattern;
  */
 public class LuhnValidate {
     public static void main(String [] args){
-        String card="34";
+        String card="92205707474866";
         System.out.println(checkLuhn(card)?CardType(card):"Invalid Card Number");
     }
     static boolean checkLuhn(String cardNo)
     {
+        cardNo=cardNo.replaceAll("\\s","");
 	int nDigits = cardNo.length();
         if(nDigits<8||nDigits>19){
             return false;
@@ -42,7 +43,8 @@ public class LuhnValidate {
 	return (nSum % 10 == 0);
     }
     static String CardType(String Cardno){
-        if(Pattern.matches("^6(?!011)(?:0[0-9]{14}|52[12][0-9]{12})$", Cardno)&&Pattern.matches("^6(?!52[12])(?:011|5[0-9][0-9])[0-9]{12}$", Cardno))
+        Cardno=Cardno.replaceAll("\\s","");
+        if(Pattern.matches("^6(?!011)(?:0[0-9]{14}|52[12][0-9]{12})$", Cardno)||Pattern.matches("^6(?!52[12])(?:011|5[0-9][0-9])[0-9]{12}$", Cardno))
             return "RuPay";
         if(Pattern.matches("^4[0-9]{6,}$", Cardno))
             return "VISA";
@@ -56,6 +58,20 @@ public class LuhnValidate {
             return "Discover";
         if(Pattern.matches("^(?:2131|1800|35[0-9]{3})[0-9]{3,}$", Cardno))
             return "JCB";
+        if(Pattern.matches("^3[47][0-9]{13}$", Cardno))
+            return "Amex Card";
+        if(Pattern.matches("^(6541|6556)[0-9]{12}$", Cardno))
+            return "BCGlobal";
+        if(Pattern.matches("^9[0-9]{15}$", Cardno))
+            return "Korean Local Card";
+        if(Pattern.matches("^(4903|4905|4911|4936|6333|6759)[0-9]{12}|(4903|4905|4911|4936|6333|6759)[0-9]{14}|(4903|4905|4911|4936|6333|6759)[0-9]{15}|564182[0-9]{10}|564182[0-9]{12}|564182[0-9]{13}|633110[0-9]{10}|633110[0-9]{12}|633110[0-9]{13}$", Cardno))
+            return "Switch Card";
+        if(Pattern.matches("^389[0-9]{11}$", Cardno))
+            return "Carte Blanche Card";
+        if(Pattern.matches("^(6334|6767)[0-9]{12}|(6334|6767)[0-9]{14}|(6334|6767)[0-9]{15}$", Cardno))
+            return "Solo Card";
+        if(Pattern.matches("^(6304|6706|6709|6771)[0-9]{12,15}$", Cardno))
+            return "Laser Card";
         return "Card may be valid but indeterminable";
     }
 }

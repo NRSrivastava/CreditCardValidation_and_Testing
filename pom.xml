@@ -5,6 +5,18 @@
     <artifactId>CreditCardValidation</artifactId>
     <version>1.0</version>
     <packaging>jar</packaging>
+    <reporting>
+        <plugins>
+            <plugin>
+           <groupId>org.eluder.coveralls</groupId>
+            <artifactId>coveralls-maven-plugin</artifactId>
+            <version>4.3.0</version>
+            <configuration>
+              <repoToken>yourcoverallsprojectrepositorytoken</repoToken>
+            </configuration>
+            </plugin>
+        </plugins>
+    </reporting>
     <dependencies>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
