@@ -5,7 +5,7 @@
     <artifactId>CreditCardValidation</artifactId>
     <version>1.0</version>
     <packaging>jar</packaging>
-    <reporting>
+    <build>
         <plugins>
             <plugin>
            <groupId>org.eluder.coveralls</groupId>
@@ -15,8 +15,32 @@
               <repoToken>yourcoverallsprojectrepositorytoken</repoToken>
             </configuration>
             </plugin>
+        <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-assembly-plugin</artifactId>
+        <executions>
+          <execution>
+            <phase>package</phase>
+            <goals>
+              <goal>single</goal>
+            </goals>
+        <configuration>
+          <descriptorRefs>
+            <descriptorRef>jar-with-dependencies</descriptorRef>
+          </descriptorRefs>
+                <archive>
+                  <manifest>
+                    <addClasspath>true</addClasspath>
+                    <classpathPrefix>lib/</classpathPrefix>
+                    <mainClass>QRClass</mainClass>
+                  </manifest>
+                </archive>
+        </configuration>
+          </execution>
+        </executions>
+        </plugin>
         </plugins>
-    </reporting>
+    </build>
     <dependencies>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
