@@ -1,8 +1,15 @@
 language: java
 jdk:
-  - oraclejdk11
+  - oraclejdk15
+sudo: false
 script:
-    ./mvnw test -B
-    mvn clean verify
+    sudo apt update -y
+    sudo apt install maven -y
+    mvn clean
+    mvn compiler:compile
+    mvn compiler:testCompile
+    mvn verify
+after_success:
+  - mvn clean test jacoco:report coveralls:report
 notifications:
     email: neelesh.sri@yahoo.com
