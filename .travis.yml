@@ -1,0 +1,9 @@
+language: java
+jdk:
+  - oraclejdk11
+script:
+    ./mvnw install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
+    ./mvnw test -B
+    mvn clean verify
+notifications:
+    email: neelesh.sri@yahoo.com

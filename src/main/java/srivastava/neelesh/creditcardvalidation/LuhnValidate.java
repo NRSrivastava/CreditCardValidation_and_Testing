@@ -43,7 +43,7 @@ public class LuhnValidate {
     }
     static String CardType(String Cardno){
         if(Pattern.matches("^6(?!011)(?:0[0-9]{14}|52[12][0-9]{12})$", Cardno)&&Pattern.matches("^6(?!52[12])(?:011|5[0-9][0-9])[0-9]{12}$", Cardno))
-            return "Rupay";
+            return "RuPay";
         if(Pattern.matches("^4[0-9]{6,}$", Cardno))
             return "VISA";
         if(Pattern.matches("^5[1-5][0-9]{5,}|222[1-9][0-9]{3,}|22[3-9][0-9]{4,}|2[3-6][0-9]{5,}|27[01][0-9]{4,}|2720[0-9]{3,}$", Cardno))
