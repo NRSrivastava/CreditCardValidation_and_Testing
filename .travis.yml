@@ -1,12 +1,12 @@
 language: java
 jdk:
-  - oraclejdk15
+  - openjdk8
 sudo: false
 script:
     mvn clean
     mvn compiler:compile
     mvn compiler:testCompile
-    mvn verify
+    mvn test
 after_success:
   - mvn clean test jacoco:report coveralls:report
 notifications:
