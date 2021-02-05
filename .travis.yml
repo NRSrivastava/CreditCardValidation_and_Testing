@@ -3,10 +3,7 @@ jdk:
   - openjdk8
 sudo: false
 script:
-    mvn clean
-    mvn compiler:compile
-    mvn compiler:testCompile
-    mvn test
+    mvn clean verify
 after_success:
   - mvn clean test jacoco:report coveralls:report
 notifications:
