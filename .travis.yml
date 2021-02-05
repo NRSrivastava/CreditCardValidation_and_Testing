@@ -3,8 +3,6 @@ jdk:
   - oraclejdk15
 sudo: false
 script:
-    sudo apt update -y
-    sudo apt install maven -y
     mvn clean
     mvn compiler:compile
     mvn compiler:testCompile
