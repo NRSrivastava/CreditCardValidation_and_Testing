@@ -3,7 +3,7 @@ jdk:
   - openjdk8
 sudo: false
 script:
-    mvn clean verify
+  -  mvn clean verify
 after_success:
   - mvn clean test jacoco:report coveralls:report
 notifications:
