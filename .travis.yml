@@ -3,7 +3,8 @@ jdk:
   - oraclejdk15
 sudo: false
 script:
-  -  mvn clean verify
+  - mvn cobertura:cobertura coveralls:report
+  - mvn clean verify
 after_success:
     - mvn clean cobertura:cobertura coveralls:report
 notifications:
