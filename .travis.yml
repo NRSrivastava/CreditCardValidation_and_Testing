@@ -5,6 +5,6 @@ sudo: false
 script:
   -  mvn clean verify
 after_success:
-  - mvn clean test jacoco:report coveralls:report
+    - mvn clean cobertura:cobertura coveralls:report
 notifications:
     email: neelesh.sri@yahoo.com
