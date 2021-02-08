@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="17" failures="0" name="srivastava.neelesh.creditcardvalidation.LuhnValidateTest" time="0.029" errors="0" skipped="0">
+<testsuite tests="17" failures="0" name="srivastava.neelesh.creditcardvalidation.LuhnValidateTest" time="0.04" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="15.0.1+9-18"/>
@@ -59,21 +59,21 @@
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="srivastava.neelesh.creditcardvalidation.LuhnValidateTest" name="srivastava.neelesh.creditcardvalidation.LuhnValidateTest.testCheckLuhn2" time="0.008"/>
-  <testcase classname="srivastava.neelesh.creditcardvalidation.LuhnValidateTest" name="srivastava.neelesh.creditcardvalidation.LuhnValidateTest.testCheckLuhn7" time="0"/>
-  <testcase classname="srivastava.neelesh.creditcardvalidation.LuhnValidateTest" name="srivastava.neelesh.creditcardvalidation.LuhnValidateTest.testCheckLuhn8" time="0.001"/>
-  <testcase classname="srivastava.neelesh.creditcardvalidation.LuhnValidateTest" name="srivastava.neelesh.creditcardvalidation.LuhnValidateTest.testCheckLuhn3" time="0.001"/>
-  <testcase classname="srivastava.neelesh.creditcardvalidation.LuhnValidateTest" name="srivastava.neelesh.creditcardvalidation.LuhnValidateTest.testCardType2" time="0.012"/>
-  <testcase classname="srivastava.neelesh.creditcardvalidation.LuhnValidateTest" name="srivastava.neelesh.creditcardvalidation.LuhnValidateTest.testCardType4" time="0.001"/>
+  <testcase classname="srivastava.neelesh.creditcardvalidation.LuhnValidateTest" name="srivastava.neelesh.creditcardvalidation.LuhnValidateTest.testCheckLuhn4" time="0.002"/>
   <testcase classname="srivastava.neelesh.creditcardvalidation.LuhnValidateTest" name="srivastava.neelesh.creditcardvalidation.LuhnValidateTest.testCheckLuhn5" time="0"/>
-  <testcase classname="srivastava.neelesh.creditcardvalidation.LuhnValidateTest" name="srivastava.neelesh.creditcardvalidation.LuhnValidateTest.testCardType3" time="0.003"/>
-  <testcase classname="srivastava.neelesh.creditcardvalidation.LuhnValidateTest" name="srivastava.neelesh.creditcardvalidation.LuhnValidateTest.testCheckLuhn1" time="0"/>
-  <testcase classname="srivastava.neelesh.creditcardvalidation.LuhnValidateTest" name="srivastava.neelesh.creditcardvalidation.LuhnValidateTest.testCheckLuhn4" time="0"/>
-  <testcase classname="srivastava.neelesh.creditcardvalidation.LuhnValidateTest" name="srivastava.neelesh.creditcardvalidation.LuhnValidateTest.testCardType1" time="0.001"/>
-  <testcase classname="srivastava.neelesh.creditcardvalidation.LuhnValidateTest" name="srivastava.neelesh.creditcardvalidation.LuhnValidateTest.testCardType5" time="0"/>
-  <testcase classname="srivastava.neelesh.creditcardvalidation.LuhnValidateTest" name="srivastava.neelesh.creditcardvalidation.LuhnValidateTest.testCardType6" time="0.001"/>
-  <testcase classname="srivastava.neelesh.creditcardvalidation.LuhnValidateTest" name="srivastava.neelesh.creditcardvalidation.LuhnValidateTest.testCardType7" time="0.001"/>
-  <testcase classname="srivastava.neelesh.creditcardvalidation.LuhnValidateTest" name="srivastava.neelesh.creditcardvalidation.LuhnValidateTest.testCardType8" time="0"/>
   <testcase classname="srivastava.neelesh.creditcardvalidation.LuhnValidateTest" name="srivastava.neelesh.creditcardvalidation.LuhnValidateTest.testCheckLuhn6" time="0"/>
-  <testcase classname="srivastava.neelesh.creditcardvalidation.LuhnValidateTest" name="srivastava.neelesh.creditcardvalidation.LuhnValidateTest.testMain" time="0"/>
+  <testcase classname="srivastava.neelesh.creditcardvalidation.LuhnValidateTest" name="srivastava.neelesh.creditcardvalidation.LuhnValidateTest.testCheckLuhn7" time="0"/>
+  <testcase classname="srivastava.neelesh.creditcardvalidation.LuhnValidateTest" name="srivastava.neelesh.creditcardvalidation.LuhnValidateTest.testMain" time="0.016"/>
+  <testcase classname="srivastava.neelesh.creditcardvalidation.LuhnValidateTest" name="srivastava.neelesh.creditcardvalidation.LuhnValidateTest.testCheckLuhn1" time="0"/>
+  <testcase classname="srivastava.neelesh.creditcardvalidation.LuhnValidateTest" name="srivastava.neelesh.creditcardvalidation.LuhnValidateTest.testCheckLuhn2" time="0"/>
+  <testcase classname="srivastava.neelesh.creditcardvalidation.LuhnValidateTest" name="srivastava.neelesh.creditcardvalidation.LuhnValidateTest.testCheckLuhn3" time="0"/>
+  <testcase classname="srivastava.neelesh.creditcardvalidation.LuhnValidateTest" name="srivastava.neelesh.creditcardvalidation.LuhnValidateTest.testCardType2" time="0.013"/>
+  <testcase classname="srivastava.neelesh.creditcardvalidation.LuhnValidateTest" name="srivastava.neelesh.creditcardvalidation.LuhnValidateTest.testCheckLuhn8" time="0"/>
+  <testcase classname="srivastava.neelesh.creditcardvalidation.LuhnValidateTest" name="srivastava.neelesh.creditcardvalidation.LuhnValidateTest.testCardType3" time="0.002"/>
+  <testcase classname="srivastava.neelesh.creditcardvalidation.LuhnValidateTest" name="srivastava.neelesh.creditcardvalidation.LuhnValidateTest.testCardType6" time="0.003"/>
+  <testcase classname="srivastava.neelesh.creditcardvalidation.LuhnValidateTest" name="srivastava.neelesh.creditcardvalidation.LuhnValidateTest.testCardType8" time="0.001"/>
+  <testcase classname="srivastava.neelesh.creditcardvalidation.LuhnValidateTest" name="srivastava.neelesh.creditcardvalidation.LuhnValidateTest.testCardType5" time="0.001"/>
+  <testcase classname="srivastava.neelesh.creditcardvalidation.LuhnValidateTest" name="srivastava.neelesh.creditcardvalidation.LuhnValidateTest.testCardType1" time="0.001"/>
+  <testcase classname="srivastava.neelesh.creditcardvalidation.LuhnValidateTest" name="srivastava.neelesh.creditcardvalidation.LuhnValidateTest.testCardType7" time="0.001"/>
+  <testcase classname="srivastava.neelesh.creditcardvalidation.LuhnValidateTest" name="srivastava.neelesh.creditcardvalidation.LuhnValidateTest.testCardType4" time="0"/>
 </testsuite>
